@@ -1,0 +1,283 @@
+#wpdreams {
+  font: normal 13px/100% Verdana, Tahoma, sans-serif;
+}
+
+#wpdreams legend {
+  font-size: 1.2em;
+  color: #444;
+}
+
+#wpdreams hr {
+  color: #eee;
+  background-color: #eee;
+  margin: 10px 40px;
+  border: none;
+}
+
+#wpdreams .wpdreams-container {
+  overflow: hidden;
+}
+
+#wpdreams input,
+#wpdreams textarea,
+#wpdreams select { 
+	padding: 9px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	height: auto;
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	width: 200px;
+	background: #FFFFFF url('bg_form.png') left top repeat-x;
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+
+#wpdreams select {
+  padding: 8px 9px 4px 9px;
+}
+
+#wpdreams input[type=radio] {
+  width: 30px;
+}
+
+
+
+#wpdreams a.yes {
+  color: #FFFFFF;
+  padding: 3px 10px;
+  line-height: 35px;
+  margin: 12px auto;
+  border: solid 1px #3b895a;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background: #51c07d;
+	cursor:pointer;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.3) inset; 
+}
+
+#wpdreams a.no {
+  color: #FFFFFF;
+  padding: 3px 10px;
+  line-height: 35px;
+  margin: 12px auto;
+  border: solid 1px #e36161;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background: #be4545;
+	cursor:pointer;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.3) inset;  
+}
+
+#wpdreams input.color {
+  background: 0;
+  width: 92px;
+}
+
+#wpdreams textarea { 
+  width: 334px;
+	height: 150px;
+	line-height: 100%;
+}
+
+#wpdreams input:hover, #wpdreams textarea:hover,
+#wpdreams input:focus, #wpdreams textarea:focus { 
+	border-color: #C9C9C9; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+}
+
+#wpdreams form label { 
+	margin:0 10px; 
+	color: #999999;
+}
+
+#wpdreams input[type=button],
+#wpdreams input[type=submit] {
+	width: auto;
+	padding: 9px 15px;
+	background: #017798;
+	border: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	cursor:pointer;
+	margin-bottom: 19px;
+}
+
+#wpdreams input[type=submit] {
+	background: #617798;
+}
+
+#wpdreams .sortable .wpdreams-slider {
+  background: transparent url(icons/drag.png) no-repeat;
+  position:relative;
+  cursor: move;
+}
+
+#wpdreams .sortable .wpdreams-slider .drag {
+    cursor: pointer;
+    height: 46px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+}
+
+
+#wpdreams label {
+  vertical-align:  	baseline;
+	margin:0 10px; 
+	color: #999999;
+}
+
+#wpdreams input.shortcode {
+	padding: 1px 1px 1px 5px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	font: normal 10px/100% Verdana, Tahoma, sans-serif;
+	width: 200px;
+	height: 20px;
+}        
+
+#wpdreams label.shortcode {
+  font-size: 12px;
+}
+
+#wpdreams img.infoimage {
+    cursor: pointer;
+    margin-left: 8px;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+
+#wpdreams .item {
+  width: 750px;
+  text-align: right;
+  padding: 3px;
+  margin: 17px 0 0;
+}
+
+#wpdreams .wpdreams-slider{
+  overflow: hidden;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	padding: 10px;
+	margin: 10px;
+}
+
+#wpdreams .wpdreams-slider .slider-info{
+  height: 26px;
+  margin: 4px 0 0 0;
+  font-size: 1.1em;
+  padding: 0 0 0 20px;
+}
+
+#wpdreams .wpdreams-slider .slider-info span {
+  margin-left: 20px;
+}
+
+#wpdreams .wpdreams-slider .slider-info img{
+   margin-left: 8px;
+   margin-top: -2px;
+   vertical-align: middle;
+   cursor: pointer;
+}
+
+#wpdreams .preview {
+  height: 28px;
+  vertical-align: middle;
+  border-radius: 2px;
+  float: none;
+  cursor: pointer;
+}
+
+#wpdreams fieldset {
+    border: 1px solid #EEEEEE;
+    margin: 5px;
+    padding: 11px;
+}
+
+#wpdreams .errorMsg {
+  color: #77261a;
+  padding: 7px;
+  margin: 5px;
+  border: 1px solid #eee;
+  background: #fff1f1;
+  border-radius: 3px;
+  text-align: left;
+}
+
+#wpdreams .successMsg {
+  color: #1a772c;
+  padding: 7px;
+  margin: 5px;
+  border: 1px solid #eee;
+  background: #f1fff1;
+  border-radius: 3px;
+}
+
+
+.tooltip {
+    display:none;
+    background:transparent url(icons/black_arrow.png);
+    font-size:12px;
+    height:70px;
+    width:160px;
+    padding:25px;
+    color:#eee;
+}
+
+
+#wpdreams .overlay {
+    display:none;
+    z-index:10000;
+    background-color:#333; 
+    min-width:10px;
+    min-height:10px;
+    border:1px solid #666;
+    -moz-box-shadow:0 0 90px 5px #000;
+    -webkit-box-shadow: 0 0 90px #000;
+}
+ 
+#wpdreams .overlay .close {
+    background-image:url(icons/close.png);
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+}
+
+#wpdreams .labeldrag {
+  background: #eee;
+  position: relative;
+  border: 1px solid #ddd;
+  width: 410px;
+  float: right;
+}
+
+#wpdreams .labeldrag .inner {
+  background: #FFF;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border: 1px solid #ddd;
+  background:url(icons/labelposition.png) no-repeat #fff;
+}
+
+#wpdreams .labeldrag .inner .dragme {
+  width: 10px;
+  height: 10px;
+  background-image:url(icons/point.png);
+  cursor: pointer;
+}

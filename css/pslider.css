@@ -1,0 +1,283 @@
+div.pslider {
+  margin: 5% auto;
+  padding: 0px auto;
+	visibility: hidden;
+	position: relative;
+	z-index: 0;
+	text-align: center;
+}
+
+div.pslider .pitem {
+  font-family: 'Oswald', sans-serif;
+  font-size: 19px;
+	background: #eee;
+	border: 1px solid #fff;
+	box-shadow: 0px 2px 15px #333;
+  padding: 8px;
+  cursor: pointer;
+  top: 0;
+}
+
+div.pslider .rotation {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -sand-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+div.pslider .pitem .slide {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}           
+
+div.pslider .pitem .slide .pcaption{
+  z-index:1000;
+  top:-300px;
+  left:-300px;
+}
+
+div.pslider .pitem .subslide>img {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  -moz-transition-duration: 6s;
+  -moz-transform: scale(1.0);
+  -moz-transform-origin: 50% 50%;
+  -o-transition-duration: 6s;
+  -o-transform: scale(1.0);
+  -o-transform-origin: 50% 50%; 
+  -webkit-transition-duration: 6s;
+  -webkit-transform: scale(1.0);
+  -webkit-transform-origin: 50% 50%; 
+  transition-duration: 6s;
+  transform: scale(1.0);
+  transform-origin: 50% 50%;
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  -o-user-select: none; 
+}
+
+div.pslider .pitem .subslide>img.kenburns:hover {
+  -moz-transform: scale(1.5);
+  -moz-transform-origin: 0% 25%; 
+  -o-transform: scale(1.5);
+  -o-transform-origin: 0% 25%;  
+  -webkit-transform: scale(1.5);
+  -webkit-transform-origin: 0% 25%;   
+  transform: scale(1.5);
+  transform-origin: 0% 25%;  
+}
+
+div.pslider .aleft,
+div.pslider .aright {
+  width: 40px;
+  height: 40px;
+  float: left;
+  cursor: pointer;
+  opacity: 0.2;
+  visibility: visible;
+  position: relative;
+  z-index: 10000;
+  background: url('img/arrow-left.png') no-repeat;
+	-webkit-transition: opacity 0.6s linear;
+	-moz-transition: opacity 0.6s linear;
+	-o-transition: opacity 0.6s linear;
+	-ms-transition: opacity 0.6s linear;	
+	transition: opacity 0.6s linear;
+}
+
+div.pslider .aleft:hover {
+  opacity: 0.8;
+}
+
+div.pslider .aright {
+  float: right;
+  background: url('img/arrow-right.png') no-repeat;
+}
+
+div.pslider .aright:hover {
+  opacity: 0.8;
+}
+
+div.fullscreen {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: url('img/fullscreen.png') no-repeat;
+  visibility: visible;
+  display:none;
+  top: 0;
+  right: 0;
+  z-index: 1000000;
+  cursor: pointer;
+}
+
+div.pslider .pitem .pcaption {
+  position: absolute;
+  text-align: center;
+}
+
+div.pslider .pitem .pcaption a {
+  text-decoration: none;
+	-webkit-transition: color 0.6s linear;
+	-moz-transition: color 0.6s linear;
+	-o-transition: color 0.6s linear;
+	-ms-transition: color 0.6s linear;	
+	transition: color 0.6s linear;
+}
+
+div.pslider .subslide {
+  position:relative;overflow:hidden;                      
+}
+
+div.pslider .subdots {
+  visibility:visible;
+  z-index:1000;
+  margin:0 auto;
+  position:absolute;
+  border:0px solid #000;
+}
+
+div.pslider .subdots .subdot {
+  float:left;
+  background:#888;
+  margin:0 10px;
+  display:block;
+  width:13px;
+  height:13px;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+
+div.pslider .subdots .subdot.vertical {
+  margin: 5px 10px;
+}
+
+div.pslider .subdots .subdot.horizontal {
+  margin: 10px 5px;
+}
+
+div.pslider .subdots .subdot.active {
+  background:#444;
+}
+
+div.pitem * div.subdots.dhidden {
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	-ms-transition: all 0.1s linear;	
+	transition: all 0.1s linear;
+  transition-delay: 0.7s;
+  -moz-transition-delay: 0.7s;
+}
+
+div.pitem:hover * div.subdots.dhidden {
+  transition-delay: 0s;
+  -moz-transition-delay: 0s;
+}
+
+div.pslider .subdots.dright {
+  right:0px;
+  top:0px;
+  height:100%;
+  width:35px;
+}
+
+div.pslider .subdots.dright.dhidden {
+  right:-50px;
+}
+
+div.pslider:hover .subdots.dright.dhidden {
+  right:0px;
+  transition-delay: 0.7s;
+  -moz-transition-delay: 0.7s;
+  -webkit-transition-delay: 0.7s;
+  -o-transition-delay: 0.7s;
+}
+
+div.pslider .subdots.dleft {
+  left:0px;
+  top:0px;
+  height:100%;
+  width:35px;
+}
+
+div.pslider .subdots.dleft.dhidden {
+  left:-50px;
+}
+
+div.pslider:hover .subdots.dleft.dhidden {
+  left:0px;
+  transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+}
+
+div.pslider .subdots.dtop {
+  left:0px;
+  top:0px;
+  width:100%;
+  height:35px;
+}
+
+div.pslider .subdots.dtop.dhidden {
+  top:-50px;
+}
+
+div.pslider:hover .subdots.dtop.dhidden {
+  top:0px;
+  transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+}
+
+div.pslider .subdots.dbottom {
+  left:0px;
+  bottom:0px;
+  width:100%;
+  height:35px;
+}
+
+div.pslider .subdots.dbottom.dhidden {
+  bottom:-50px;
+}
+
+div.pslider:hover .subdots.dbottom.dhidden {
+  bottom:0px;
+  transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+}
+
+div.pslider .dots {
+  visibility:visible;
+  z-index:1000;
+  margin:0 auto;
+  position:absolute;
+  border:0px solid #000;
+}
+
+
+
+div.pslider .dots .dot {
+  float:left;
+  background:#888;
+  margin:0 5px;
+  display:block;
+  width:13px;
+  height:13px;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+
+div.pslider .dots .dot.active {
+  background:#444;
+}
+
